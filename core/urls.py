@@ -21,7 +21,7 @@ from pages.views import about, home, contact, login, register, profile
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path("#about/", about),
+    path("about/", about),
     path("contact/", contact),
     path("login/", login),
     path("register/", register),
