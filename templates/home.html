@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kutubxona.uz | Bosh sahifa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    /* === Navbar === */
+    header {
+      background-color: #0056b3;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* === Hero Section === */
+    .hero {
+      background: linear-gradient(to right, #007bff, #00c6ff);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: white;
+      color: #007bff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .hero button:hover {
+      background-color: #ffcc00;
+      color: #333;
+    }
+
+    /* === Books Section === */
+    .books {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .books h3 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .book {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+    }
+
+    .book img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .book h4 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .book p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* === About Section === */
+    .about {
+      background-color: #e9f1ff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .about h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .about p {
+      max-width: 800px;
+      margin: auto;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* === Footer === */
+    footer {
+      background-color: #003d80;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kutubxona.uz</h1>
+    <nav>
+      <a href="index">Bosh sahifa</a>
+      <a href="kitoblar">Kitoblar</a>
+      <a href="register">Ro‘yxatdan o‘tish</a>
+      <a href="aloqa">Aloqa</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Xush kelibsiz Kutubxona.uz saytiga!</h2>
+    <p>O‘zingiz yoqtirgan kitoblarni toping, o‘qing va bilimlaringizni oshiring!</p>
+    <button onclick="window.location.href='kitoblar'">Kitoblarni ko‘rish</button>
+  </section>
+
+  <section class="books">
+    <h3>Eng mashhur kitoblar</h3>
+    <div class="book-list">
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1528209392022-6bcbfafd4a3a" alt="Kitob 1">
+        <h4>Alkimyogar</h4>
+        <p>Paulo Koelo — Hayot ma’nosini izlovchi ajoyib asar.</p>
+      </div>
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" alt="Kitob 2">
+        <h4>1984</h4>
+        <p>Jorj Oruell — erkinlik va nazorat haqida klassik roman.</p>
+      </div>
+      <div class="book">
+        <img src="https://images.unsplash.com/photo-1473755504818-b72b6dfdc226" alt="Kitob 3">
+        <h4>Boy ota, kambag‘al ota</h4>
+        <p>Robert Kiyosaki — moliyaviy savodxonlik darsi.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <h3>Kutubxona haqida</h3>
+    <p>
+      Bizning kutubxona — bilim, ilhom va rivojlanish maskani. Bu yerda siz turli janrdagi kitoblarni topasiz: 
+      badiiy adabiyot, ilmiy manbalar, tarixiy asarlar va yana ko‘p narsa. Har bir kitob yangi dunyoga eshik ochadi.
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2025 Kutubxona.uz | Barcha huquqlar himoyalangan</p>
+  </footer>
+
+</body>
+</html>
