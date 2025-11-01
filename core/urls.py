@@ -5,9 +5,9 @@ from pages.views import home, bosh_sahifa, books, register, aloqa
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home),
-    path('index/', bosh_sahifa ),
-    path("kitoblar/", books),
-    path("register/", register),
-    path("aloqa/", aloqa),
+    path('index/', bosh_sahifa, name="bosh_sahifa" ),
+    path("kitoblar/", books, name="kitoblar"),
+    path("register/", register, name="register"),
+    path("aloqa/", aloqa, name="aloqa"),
 
 ]
